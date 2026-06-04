@@ -29,13 +29,13 @@ public class list3 {
             temp=temp.next;
         }
     }
-    void delete_ node(int data){
+    void delete(int value){
          Node temp=head;
-         Node ttemp;
+         Node ttemp=head;
         if(head.next==null){
             head=null;
         }
-        while(temp.next!=null){
+        while(temp.data!=value){
             ttemp=temp;
             temp=temp.next;
         }
@@ -51,7 +51,10 @@ public class list3 {
         l1.insert_last(40);
         l1.insert_last(50);
         l1.print();
+        l1.delete(20);
+         l1.print();
     }
         
     }
 
+                        
